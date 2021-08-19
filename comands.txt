@@ -23,3 +23,12 @@ npm uninstall bootstrap
 
 npm install bootstrap -D
 npm install @popperjs/core --save-dev
+
+
+cp .env.example .env
+php artisan key:generate
+
+create database laravel_datatable_react
+
+
+php artisan migrate
