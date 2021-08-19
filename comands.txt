@@ -1,0 +1,25 @@
+laravel new laravel-datatable-react
+
+composer require laravel/ui
+
+php artisan ui react
+
+npm install
+
+https://www.positronx.io/how-to-install-react-js-in-laravel-with-bootstrap/
+
+
+npm run watch
+
+npm run dev
+
+
+
+
+-----------------------------------------------------------------------------
+#optional resolve conflict deprecation sass $variable
+
+npm uninstall bootstrap
+
+npm install bootstrap -D
+npm install @popperjs/core --save-dev
