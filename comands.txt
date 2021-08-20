@@ -32,3 +32,10 @@ create database laravel_datatable_react
 
 
 php artisan migrate
+
+
+
+php artisan migrate:fresh --seed
+
+
+composer install --ignore-platform-reqs
