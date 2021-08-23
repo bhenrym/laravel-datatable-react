@@ -1,0 +1,188 @@
+.YrnehPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+}
+
+.YrnehTableContainer-root {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.YrnehPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+        0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.YrnehPaper-rounded {
+    border-radius: 4px;
+}
+
+.YrnehTable-root {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table {
+    display: table;
+    /*
+    border-collapse: separate;
+    */
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+/*
+.YrnehTableRowStriped:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+*/
+
+.YrnehTableRowStriped tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.YrnehTableRowHover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.YrnehTableCellSizeSmall td,
+.YrnehTableCellSizeSmall th {
+    padding: 6px 24px 6px 16px;
+}
+
+/*
+.YrnehTableCellBorder td,.YrnehTableCellBorder
+th {
+    border: 1px solid rgba(224, 224, 224, 1);
+}
+*/
+
+.YrnehTableCellBorder {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.YrnehTableCellBorder td,.YrnehTableCellBorder
+th {
+    border: 1px solid rgba(224, 224, 224, 1);
+}
+
+
+
+.YrnehTableHead-root {
+    display: table-header-group;
+}
+
+.YrnehTableRow-root {
+    color: inherit;
+    display: table-row;
+    outline: 0;
+    vertical-align: middle;
+}
+
+.YrnehTableCell-root {
+    display: table-cell;
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+}
+
+.YrnehTableCell-head {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.YrnehTableCell-alignRight {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.YrnehTableBody-root {
+    display: table-row-group;
+}
+
+.YrnehTableRow-root {
+    color: inherit;
+    display: table-row;
+    outline: 0;
+    vertical-align: middle;
+}
+
+.YrnehTableCell-body {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+@media screen and (max-width: 600px) {
+    .YrnehPaper-rounded {
+        border-radius: 4px;
+    }
+
+    .YrnehTable-root {
+        border: 0;
+    }
+
+    .YrnehPaper-elevation1 {
+        box-shadow: none;
+    }
+
+    .YrnehTableHead-root {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .YrnehTableRow-root {
+        color: inherit;
+        display: block;
+        outline: 0;
+        border-bottom: 4px solid rgba(224, 224, 224, 1);
+
+        border-right: 1px solid rgba(224, 224, 224, 1);
+        border-left: 1px solid rgba(224, 224, 224, 1);
+
+        margin-bottom: 0.625em;
+    }
+
+    /*table td */
+    .YrnehTableCell-root {
+        display: block;
+        padding: 16px;
+        font-size: 0.875rem;
+        text-align: right;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.43;
+        border-bottom: 1px solid rgba(224, 224, 224, 1);
+        letter-spacing: 0.01071em;
+    }
+
+    .YrnehTableCell-root::before {
+        content: attr(data-label)" : ";;
+        float: left;
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .YrnehTableCell-root:last-child {
+        border-bottom: 0;
+    }
+}

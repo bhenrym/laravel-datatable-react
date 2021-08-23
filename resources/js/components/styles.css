@@ -1,43 +1,82 @@
-table {
+div >#yrneh-table {
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+        0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+#yrneh-table > table {
     border: 1px solid #ccc;
     border-collapse: collapse;
     margin: 0;
     padding: 0;
     width: 100%;
     table-layout: fixed;
+
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+
 }
 
-table caption {
+#yrneh-table > table caption {
     font-size: 1.5em;
-    margin: .5em 0 .75em;
+    margin: 0.5em 0 0.75em;
 }
 
-table tr {
-    background-color: #f8f8f8;
+#yrneh-table > table thead {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+#yrneh-table > table tr {
+    background-color: #ffffff;
     border: 1px solid #ddd;
-    padding: .35em;
+    padding: 0.35em;
 }
 
-table th,
-table td {
-    padding: .625em;
-    text-align: center;
+#yrneh-table > table th,
+#yrneh-table > table td {
+    padding: 0.625em;
+    
+    text-align: left;
+    
 }
 
-table th {
-    font-size: .85em;
-    letter-spacing: .1em;
+#yrneh-table > table th {
+    /*font-size: 0.85em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
+    */
 }
 
 @media screen and (max-width: 600px) {
-    table {
-        border: 0;
+    div >#yrneh-table {
+        box-shadow: none;
     }
-    table caption {
+
+    #yrneh-table > table {
+        border: 0;
+
+        padding: 16px;
+        font-size: 0.875rem;
+        text-align: left;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        line-height: 1.43;
+        border-bottom: 1px solid rgba(224, 224, 224, 1);
+        letter-spacing: 0.01071em;
+        vertical-align: inherit;
+    }
+    #yrneh-table > table caption {
         font-size: 1.3em;
     }
-    table thead {
+    #yrneh-table > table thead {
         border: none;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -47,36 +86,28 @@ table th {
         position: absolute;
         width: 1px;
     }
-    table tr {
+    #yrneh-table > table tr {
         border-bottom: 3px solid #ddd;
         display: block;
-        margin-bottom: .625em;
+        margin-bottom: 0.625em;
     }
-    table td {
+    #yrneh-table > table td {
         border-bottom: 1px solid #ddd;
         display: block;
-        font-size: .8em;
+        /*font-size: 0.8em;*/
         text-align: right;
     }
-    table td::before {
+    #yrneh-table > table td::before {
         /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
+          * aria-label has no advantage, it won't be read inside a table
+          content: attr(aria-label);
+          */
         content: attr(data-label);
         float: left;
         font-weight: bold;
         text-transform: uppercase;
     }
-    table td:last-child {
+    #yrneh-table > table td:last-child {
         border-bottom: 0;
     }
-}
-
-
-/* general styling */
-
-body {
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.25;
 }

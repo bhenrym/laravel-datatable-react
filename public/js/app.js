@@ -9067,12 +9067,14 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/styles.css */ "./resources/js/components/styles.css");
+/* harmony import */ var _components_yrnehTableStyles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/yrnehTableStyles.css */ "./resources/js/components/yrnehTableStyles.css");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Register React components
 
 
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
 
 __webpack_require__(/*! ./components/User */ "./resources/js/components/User.jsx");
+
 
 
 
@@ -9187,13 +9189,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/makeStyles.js");
-/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Table */ "./node_modules/@material-ui/core/esm/Table/Table.js");
-/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/TableBody */ "./node_modules/@material-ui/core/esm/TableBody/TableBody.js");
-/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/TableCell */ "./node_modules/@material-ui/core/esm/TableCell/TableCell.js");
-/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "./node_modules/@material-ui/core/esm/TableContainer/TableContainer.js");
-/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/TableHead */ "./node_modules/@material-ui/core/esm/TableHead/TableHead.js");
-/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/TableRow */ "./node_modules/@material-ui/core/esm/TableRow/TableRow.js");
-/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/Paper.js");
+/* harmony import */ var _material_ui_core_Table__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Table */ "./node_modules/@material-ui/core/esm/Table/Table.js");
+/* harmony import */ var _material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/TableBody */ "./node_modules/@material-ui/core/esm/TableBody/TableBody.js");
+/* harmony import */ var _material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/TableCell */ "./node_modules/@material-ui/core/esm/TableCell/TableCell.js");
+/* harmony import */ var _material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/TableContainer */ "./node_modules/@material-ui/core/esm/TableContainer/TableContainer.js");
+/* harmony import */ var _material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/TableHead */ "./node_modules/@material-ui/core/esm/TableHead/TableHead.js");
+/* harmony import */ var _material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/TableRow */ "./node_modules/@material-ui/core/esm/TableRow/TableRow.js");
+/* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Paper */ "./node_modules/@material-ui/core/esm/Paper/Paper.js");
 /* harmony import */ var _rowsData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./rowsData */ "./resources/js/components/rowsData.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
@@ -9268,6 +9270,7 @@ function createData(name, calories, fat, carbs, protein) {
 
 
 
+
 var queryIni = {
   order_column: "id",
   order_direction: "desc",
@@ -9276,7 +9279,7 @@ var queryIni = {
 
 };
 function User() {
-  var classes = useStyles();
+  var classNamees = useStyles();
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
     hits: []
@@ -9317,183 +9320,47 @@ function User() {
 
     fetchData();
   }, []);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h1", {
-      className: "title",
-      children: "Material UI - Responsive Table"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("table", {
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("caption", {
-        children: "Statement Summary"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("thead", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
-            scope: "col",
-            children: "Account"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
-            scope: "col",
-            children: "Due Date"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
-            scope: "col",
-            children: "Amount"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
-            scope: "col",
-            children: "Period"
-          })]
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tbody", {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Accountet ",
-            children: "Visa - 3412"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Due Date",
-            children: "04/01/2016"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Amount",
-            children: "$1,190"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Period",
-            children: "03/01/2016 - 03/31/2016"
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            scope: "row",
-            "data-label": "Account",
-            children: "Visa - 6076"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Due Date",
-            children: "03/01/2016"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Amount",
-            children: "$2,443"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Period",
-            children: "02/01/2016 - 02/29/2016"
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            scope: "row",
-            "data-label": "Account",
-            children: "Corporate AMEX"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Due Date",
-            children: "03/01/2016"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Amount",
-            children: "$1,181"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Period",
-            children: "02/01/2016 - 02/29/2016"
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            scope: "row",
-            "data-label": "Acount",
-            children: "Visa - 3412"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Due Date",
-            children: "02/01/2016"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Amount",
-            children: "$842"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
-            "data-label": "Period",
-            children: "01/01/2016 - 01/31/2016"
-          })]
-        })]
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7__.default, {
-      className: "container",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_8__.default, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_9__.default, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_10__.default, {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-              children: "Dessert (100g serving)"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-              align: "right",
-              children: "Calories"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-              align: "right",
-              children: "Fat (g)"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-              align: "right",
-              children: "Carbs (g)"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-              align: "right",
-              children: "Protein (g)"
-            })]
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_12__.default, {
-          children: _rowsData__WEBPACK_IMPORTED_MODULE_3__.default.map(function (_ref2) {
-            var id = _ref2.id,
-                name = _ref2.name,
-                calories = _ref2.calories,
-                fat = _ref2.fat,
-                carbs = _ref2.carbs,
-                protein = _ref2.protein;
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_10__.default, {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-                component: "th",
-                scope: "row",
-                children: name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-                align: "right",
-                children: calories
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-                align: "right",
-                children: fat
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-                align: "right",
-                children: carbs
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
-                align: "right",
-                children: protein
-              })]
-            }, id);
-          })
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_13__.default, {
-      component: _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_7__.default,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_8__.default, {
-        className: classes.table,
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableContainer__WEBPACK_IMPORTED_MODULE_7__.default, {
+      component: _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_8__.default,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_Table__WEBPACK_IMPORTED_MODULE_9__.default, {
+        className: classNamees.table,
         size: "small",
         "aria-label": "a dense table",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_9__.default, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_10__.default, {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableHead__WEBPACK_IMPORTED_MODULE_10__.default, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_11__.default, {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
               children: "Dessert (100g serving)"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
               align: "right",
               children: "Calories"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
               align: "right",
               children: "Fat\xA0(g)"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
               align: "right",
               children: "Carbs\xA0(g)"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
               align: "right",
               children: "Protein\xA0(g)"
             })]
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_12__.default, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableBody__WEBPACK_IMPORTED_MODULE_13__.default, {
           children: _rowsData__WEBPACK_IMPORTED_MODULE_3__.default.map(function (row) {
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_10__.default, {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_material_ui_core_TableRow__WEBPACK_IMPORTED_MODULE_11__.default, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
                 component: "th",
-                scope: "row",
                 children: row.name
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
                 align: "right",
                 children: row.calories
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
                 align: "right",
                 children: row.fat
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
                 align: "right",
                 children: row.carbs
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_11__.default, {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_TableCell__WEBPACK_IMPORTED_MODULE_12__.default, {
                 align: "right",
                 children: row.protein
               })]
@@ -9501,7 +9368,211 @@ function User() {
           })
         })]
       })
-    })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "YrnehPaper-root YrnehTableContainer-root YrnehPaper-elevation1 YrnehPaper-rounded",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("table", {
+        className: "YrnehTable-root YrnehTableRowStriped YrnehTableRowHover YrnehTableCellSizeSmall YrnehTableCellBorder",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("thead", {
+          className: "YrnehTableHead-root",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            className: "YrnehTableRow-root YrnehTableRow-head ",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              className: "YrnehTableCell-root YrnehTableCell-head YrnehTableCell-alignRight  ",
+              scope: "col",
+              children: "Dessert\xA0(100g\xA0serving)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              className: "YrnehTableCell-root YrnehTableCell-head  ",
+              scope: "col",
+              children: "Calories"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              className: "YrnehTableCell-root YrnehTableCell-head  ",
+              scope: "col",
+              children: "Fat\xA0(g)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              className: "YrnehTableCell-root YrnehTableCell-head  ",
+              scope: "col",
+              children: "Carbs\xA0(g)"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              className: "YrnehTableCell-root YrnehTableCell-head  ",
+              scope: "col",
+              children: "Protein\xA0(g)"
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tbody", {
+          className: "YrnehTableBody-root",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            className: "YrnehTableRow-root ",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Dessert (100g serving)",
+              children: "Frozen yoghurt "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Calories",
+              children: "159"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Fat\xA0(g)",
+              children: "6"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Carbs\xA0(g)",
+              children: "24"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Protein\xA0(g)",
+              children: "4"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            className: "YrnehTableRow-root ",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Dessert (100g serving)",
+              children: "Ice cream "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Calories",
+              children: "237"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Fat\xA0(g)",
+              children: "9"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Carbs\xA0(g)",
+              children: "37"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Protein\xA0(g)",
+              children: "4.3"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            className: "YrnehTableRow-root ",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Dessert (100g serving)",
+              children: "Eclairsdfas "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Calories",
+              children: "262"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Fat\xA0(g)",
+              children: "16"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Carbs\xA0(g)",
+              children: "\xA0"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Protein\xA0(g)",
+              children: "Es f\xE1cil ver aqu\xED c\xF3mo cada celda de encabezado en la tabla, provee informaci\xF3n para el resto de las celdas en la columna a la que pertenece. Algunos agentes, como los navegadores de voz, hacen el mismo an\xE1lisis cuando deben informar al usuario qu\xE9 celda de encabezado est\xE1 asociada a una celda en particular. Pero en algunos casos, las ambig\xFCedades necesitan ser evitadas y es por este motivo que HTML provee algunos atributos como"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            className: "YrnehTableRow-root ",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Dessert (100g serving)",
+              children: "Ice cream "
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Calories",
+              children: "237"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Fat\xA0(g)",
+              children: "9"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Carbs\xA0(g)",
+              children: "37"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              className: "YrnehTableCell-root YrnehTableCell-body  ",
+              "data-label": "Protein\xA0(g)",
+              children: "4.3"
+            })]
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      className: "",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("table", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("thead", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              scope: "col",
+              children: "Account"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              scope: "col",
+              children: "Due Date"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              scope: "col",
+              children: "Amount"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+              scope: "col",
+              children: "Period"
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tbody", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              children: "Visa - 3412"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Due Date",
+              children: "04/01/2016"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Amount",
+              children: "$1,190"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Period"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Account",
+              children: "Visa - 6076"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Due Date",
+              children: "03/01/2016"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Amount",
+              children: "$2,443"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Period",
+              children: "02/01/2016 - 02/29/2016"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Account",
+              children: "Corporate AMEX"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Due Date",
+              children: "03/01/2016"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Amount",
+              children: "$1,181"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Period",
+              children: "02/01/2016 - 02/29/2016"
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Acount",
+              children: "Visa - 3412"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Due Date",
+              children: "02/01/2016"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Amount",
+              children: "$842"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("td", {
+              "data-label": "Period",
+              children: "01/01/2016 - 01/31/2016"
+            })]
+          })]
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {})]
   });
 } // DOM element
 
@@ -14617,7 +14688,31 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "table {\n    border: 1px solid #ccc;\n    border-collapse: collapse;\n    margin: 0;\n    padding: 0;\n    width: 100%;\n    table-layout: fixed;\n}\n\ntable caption {\n    font-size: 1.5em;\n    margin: .5em 0 .75em;\n}\n\ntable tr {\n    background-color: #f8f8f8;\n    border: 1px solid #ddd;\n    padding: .35em;\n}\n\ntable th,\ntable td {\n    padding: .625em;\n    text-align: center;\n}\n\ntable th {\n    font-size: .85em;\n    letter-spacing: .1em;\n    text-transform: uppercase;\n}\n\n@media screen and (max-width: 600px) {\n    table {\n        border: 0;\n    }\n    table caption {\n        font-size: 1.3em;\n    }\n    table thead {\n        border: none;\n        clip: rect(0 0 0 0);\n        height: 1px;\n        margin: -1px;\n        overflow: hidden;\n        padding: 0;\n        position: absolute;\n        width: 1px;\n    }\n    table tr {\n        border-bottom: 3px solid #ddd;\n        display: block;\n        margin-bottom: .625em;\n    }\n    table td {\n        border-bottom: 1px solid #ddd;\n        display: block;\n        font-size: .8em;\n        text-align: right;\n    }\n    table td::before {\n        /*\n      * aria-label has no advantage, it won't be read inside a table\n      content: attr(aria-label);\n      */\n        content: attr(data-label);\n        float: left;\n        font-weight: bold;\n        text-transform: uppercase;\n    }\n    table td:last-child {\n        border-bottom: 0;\n    }\n}\n\n\n/* general styling */\n\nbody {\n    font-family: \"Open Sans\", sans-serif;\n    line-height: 1.25;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "div >#yrneh-table {\r\n    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),\r\n        0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);\r\n}\r\n\r\n#yrneh-table > table {\r\n    border: 1px solid #ccc;\r\n    border-collapse: collapse;\r\n    margin: 0;\r\n    padding: 0;\r\n    width: 100%;\r\n    table-layout: fixed;\r\n\r\n    padding: 16px;\r\n    font-size: 0.875rem;\r\n    text-align: left;\r\n    font-family: \"Roboto\", \"Helvetica\", \"Arial\", sans-serif;\r\n    font-weight: 400;\r\n    line-height: 1.43;\r\n    border-bottom: 1px solid rgba(224, 224, 224, 1);\r\n    letter-spacing: 0.01071em;\r\n    vertical-align: inherit;\r\n\r\n}\r\n\r\n#yrneh-table > table caption {\r\n    font-size: 1.5em;\r\n    margin: 0.5em 0 0.75em;\r\n}\r\n\r\n#yrneh-table > table thead {\r\n    color: rgba(0, 0, 0, 0.87);\r\n    font-weight: 500;\r\n    line-height: 1.5rem;\r\n}\r\n\r\n#yrneh-table > table tr {\r\n    background-color: #ffffff;\r\n    border: 1px solid #ddd;\r\n    padding: 0.35em;\r\n}\r\n\r\n#yrneh-table > table th,\r\n#yrneh-table > table td {\r\n    padding: 0.625em;\r\n    \r\n    text-align: left;\r\n    \r\n}\r\n\r\n#yrneh-table > table th {\r\n    /*font-size: 0.85em;\r\n    letter-spacing: 0.1em;\r\n    text-transform: uppercase;\r\n    */\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n    div >#yrneh-table {\r\n        box-shadow: none;\r\n    }\r\n\r\n    #yrneh-table > table {\r\n        border: 0;\r\n\r\n        padding: 16px;\r\n        font-size: 0.875rem;\r\n        text-align: left;\r\n        font-family: \"Roboto\", \"Helvetica\", \"Arial\", sans-serif;\r\n        font-weight: 400;\r\n        line-height: 1.43;\r\n        border-bottom: 1px solid rgba(224, 224, 224, 1);\r\n        letter-spacing: 0.01071em;\r\n        vertical-align: inherit;\r\n    }\r\n    #yrneh-table > table caption {\r\n        font-size: 1.3em;\r\n    }\r\n    #yrneh-table > table thead {\r\n        border: none;\r\n        clip: rect(0 0 0 0);\r\n        height: 1px;\r\n        margin: -1px;\r\n        overflow: hidden;\r\n        padding: 0;\r\n        position: absolute;\r\n        width: 1px;\r\n    }\r\n    #yrneh-table > table tr {\r\n        border-bottom: 3px solid #ddd;\r\n        display: block;\r\n        margin-bottom: 0.625em;\r\n    }\r\n    #yrneh-table > table td {\r\n        border-bottom: 1px solid #ddd;\r\n        display: block;\r\n        /*font-size: 0.8em;*/\r\n        text-align: right;\r\n    }\r\n    #yrneh-table > table td::before {\r\n        /*\r\n          * aria-label has no advantage, it won't be read inside a table\r\n          content: attr(aria-label);\r\n          */\r\n        content: attr(data-label);\r\n        float: left;\r\n        font-weight: bold;\r\n        text-transform: uppercase;\r\n    }\r\n    #yrneh-table > table td:last-child {\r\n        border-bottom: 0;\r\n    }\r\n}\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/yrnehTableStyles.css":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/yrnehTableStyles.css ***!
+  \****************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".YrnehPaper-root {\r\n    color: rgba(0, 0, 0, 0.87);\r\n    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\r\n    background-color: #fff;\r\n}\r\n\r\n.YrnehTableContainer-root {\r\n    width: 100%;\r\n    overflow-x: auto;\r\n}\r\n\r\n.YrnehPaper-elevation1 {\r\n    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),\r\n        0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);\r\n}\r\n\r\n.YrnehPaper-rounded {\r\n    border-radius: 4px;\r\n}\r\n\r\n.YrnehTable-root {\r\n    width: 100%;\r\n    display: table;\r\n    border-spacing: 0;\r\n    border-collapse: collapse;\r\n}\r\n\r\ntable {\r\n    display: table;\r\n    /*\r\n    border-collapse: separate;\r\n    */\r\n    border-collapse: separate;\r\n    box-sizing: border-box;\r\n    text-indent: initial;\r\n    border-spacing: 2px;\r\n    border-color: grey;\r\n}\r\n\r\n/*\r\n.YrnehTableRowStriped:nth-of-type(even) {\r\n    background-color: rgba(0, 0, 0, 0.04);\r\n}\r\n*/\r\n\r\n.YrnehTableRowStriped tr:nth-child(even) {\r\n    background-color: rgba(0, 0, 0, 0.04);\r\n}\r\n\r\n.YrnehTableRowHover tbody tr:hover {\r\n    background-color: rgba(0, 0, 0, 0.04);\r\n}\r\n\r\n.YrnehTableCellSizeSmall td,\r\n.YrnehTableCellSizeSmall th {\r\n    padding: 6px 24px 6px 16px;\r\n}\r\n\r\n/*\r\n.YrnehTableCellBorder td,.YrnehTableCellBorder\r\nth {\r\n    border: 1px solid rgba(224, 224, 224, 1);\r\n}\r\n*/\r\n\r\n.YrnehTableCellBorder {\r\n    border-collapse: collapse;\r\n    border-style: hidden;\r\n}\r\n\r\n.YrnehTableCellBorder td,.YrnehTableCellBorder\r\nth {\r\n    border: 1px solid rgba(224, 224, 224, 1);\r\n}\r\n\r\n\r\n\r\n.YrnehTableHead-root {\r\n    display: table-header-group;\r\n}\r\n\r\n.YrnehTableRow-root {\r\n    color: inherit;\r\n    display: table-row;\r\n    outline: 0;\r\n    vertical-align: middle;\r\n}\r\n\r\n.YrnehTableCell-root {\r\n    display: table-cell;\r\n    padding: 16px;\r\n    font-size: 0.875rem;\r\n    text-align: left;\r\n    font-family: \"Roboto\", \"Helvetica\", \"Arial\", sans-serif;\r\n    font-weight: 400;\r\n    line-height: 1.43;\r\n    border-bottom: 1px solid rgba(224, 224, 224, 1);\r\n    letter-spacing: 0.01071em;\r\n    vertical-align: inherit;\r\n}\r\n\r\n.YrnehTableCell-head {\r\n    color: rgba(0, 0, 0, 0.87);\r\n    font-weight: 500;\r\n    line-height: 1.5rem;\r\n}\r\n\r\n.YrnehTableCell-alignRight {\r\n    text-align: right;\r\n    flex-direction: row-reverse;\r\n}\r\n\r\n.YrnehTableBody-root {\r\n    display: table-row-group;\r\n}\r\n\r\n.YrnehTableRow-root {\r\n    color: inherit;\r\n    display: table-row;\r\n    outline: 0;\r\n    vertical-align: middle;\r\n}\r\n\r\n.YrnehTableCell-body {\r\n    color: rgba(0, 0, 0, 0.87);\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n    .YrnehPaper-rounded {\r\n        border-radius: 4px;\r\n    }\r\n\r\n    .YrnehTable-root {\r\n        border: 0;\r\n    }\r\n\r\n    .YrnehPaper-elevation1 {\r\n        box-shadow: none;\r\n    }\r\n\r\n    .YrnehTableHead-root {\r\n        border: none;\r\n        clip: rect(0 0 0 0);\r\n        height: 1px;\r\n        margin: -1px;\r\n        overflow: hidden;\r\n        padding: 0;\r\n        position: absolute;\r\n        width: 1px;\r\n    }\r\n\r\n    .YrnehTableRow-root {\r\n        color: inherit;\r\n        display: block;\r\n        outline: 0;\r\n        border-bottom: 4px solid rgba(224, 224, 224, 1);\r\n\r\n        border-right: 1px solid rgba(224, 224, 224, 1);\r\n        border-left: 1px solid rgba(224, 224, 224, 1);\r\n\r\n        margin-bottom: 0.625em;\r\n    }\r\n\r\n    /*table td */\r\n    .YrnehTableCell-root {\r\n        display: block;\r\n        padding: 16px;\r\n        font-size: 0.875rem;\r\n        text-align: right;\r\n        font-family: \"Roboto\", \"Helvetica\", \"Arial\", sans-serif;\r\n        font-weight: 400;\r\n        line-height: 1.43;\r\n        border-bottom: 1px solid rgba(224, 224, 224, 1);\r\n        letter-spacing: 0.01071em;\r\n    }\r\n\r\n    .YrnehTableCell-root::before {\r\n        content: attr(data-label)\" : \";;\r\n        float: left;\r\n        color: rgba(0, 0, 0, 0.87);\r\n        font-weight: 500;\r\n        text-transform: uppercase;\r\n    }\r\n\r\n    .YrnehTableCell-root:last-child {\r\n        border-bottom: 0;\r\n    }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -82867,6 +82962,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_styles_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
+/***/ "./resources/js/components/yrnehTableStyles.css":
+/*!******************************************************!*\
+  !*** ./resources/js/components/yrnehTableStyles.css ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_yrnehTableStyles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./yrnehTableStyles.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/yrnehTableStyles.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_yrnehTableStyles_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_yrnehTableStyles_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
