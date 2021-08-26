@@ -1,7 +1,13 @@
-require('./bootstrap');
+require("./bootstrap");
 
-// Register React components
-require('./components/Example');
-require('./components/User');
-import "./components/styles.css";
-import "./components/yrnehTableStyles.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+
+
+ReactDOM.render(
+    <React.StrictMode >
+        <App />
+    </React.StrictMode>,
+    document.getElementById("root")
+);

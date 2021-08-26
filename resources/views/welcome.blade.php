@@ -14,7 +14,7 @@
 <body>
 
     <!-- React root DOM -->
-    <div id="user">
+    <div id="root">
     </div>
 
     <!-- React JS -->
