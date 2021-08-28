@@ -26,9 +26,6 @@
 
 table {
     display: table;
-    /*
-    border-collapse: separate;
-    */
     border-collapse: separate;
     box-sizing: border-box;
     text-indent: initial;

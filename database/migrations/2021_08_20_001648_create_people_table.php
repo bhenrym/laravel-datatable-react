@@ -15,20 +15,19 @@ class CreatePeopleTable extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->increments('id');
-            
+
             $table->string('type_doc', 20);
             $table->string('number_doc', 20);
             $table->string('first_name', 20);
             $table->string('second_name', 20)->nullable();
             $table->string('ap_paternal', 20);
             $table->string('ap_maternal', 20);
-            $table->string('address', 100);
-            $table->string('contact', 15);
-            $table->boolean('state_person')->default(1);    
+            $table->string('address', 300);
+            $table->string('contact', 25);
             $table->timestamps();
         });
 
-       
+
     }
 
     /**

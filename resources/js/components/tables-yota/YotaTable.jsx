@@ -38,8 +38,6 @@ const YotaTable = () => {
                             <th className="YotaTableCell-root YotaTableCell-head  " scope="col">Fat&nbsp;(g)</th>
                             <th className="YotaTableCell-root YotaTableCell-head  " scope="col">Carbs&nbsp;(g)</th>
                             <th className="YotaTableCell-root YotaTableCell-head  " scope="col">Protein&nbsp;(g)</th>
-
-
                         </tr>
                     </thead>
                     <tbody className="YotaTableBody-root">

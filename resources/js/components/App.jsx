@@ -5,9 +5,11 @@ import YotaTable from "./tables-yota/YotaTable";
 function App() {
     return (
         <>
-            <CrudApi></CrudApi>
-            <h1>Ejercicios con React</h1>
-            < YotaTable />
+            <h1>cOMPONENTS REACT JS</h1>
+            <br/><br/><hr/>
+            <YotaTable/>
+            <br/><br/><hr/>
+            <CrudApi/>
         </>
     );
 }

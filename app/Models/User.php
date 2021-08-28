@@ -20,10 +20,10 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'name_user', 'email', 'password', 'state_user', 'role_id', 'person_id'
     ];
 
     /**
@@ -44,4 +44,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+
+
+    public function role()  //singular role por que un usuario tieneun rol
+    {
+        // un usuario pertenece un rol
+        return $this->belongsTo(App\Models\Role::class);
+    }
+
+    public function person() // singular person por que un usuario es una persona
+    {
+        // un usuario pertenece una persona
+        return $this->belongsTo(App\Models\Person::class);
+    }
 }
